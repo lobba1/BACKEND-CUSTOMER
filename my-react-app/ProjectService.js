@@ -85,12 +85,12 @@ export const deleteProject = async (id) => {
 };
 
 // File: services/customerService.js
-const API_URL = 'https://localhost:7100/api';
+const CUSTOMER_API_URL = 'https://localhost:7100/api';
 
 // Get all customers
 export const getAllCustomers = async () => {
   try {
-    const response = await fetch(`${API_URL}/customers`);
+    const response = await fetch(`${CUSTOMER_API_URL}/customers`);
     if (!response.ok) {
       throw new Error('Failed to fetch customers');
     }
@@ -104,7 +104,7 @@ export const getAllCustomers = async () => {
 // Get customer by ID
 export const getCustomerById = async (id) => {
   try {
-    const response = await fetch(`${API_URL}/customers/${id}`);
+    const response = await fetch(`${CUSTOMER_API_URL}/customers/${id}`);
     if (!response.ok) {
       throw new Error(`Failed to fetch customer with ID: ${id}`);
     }

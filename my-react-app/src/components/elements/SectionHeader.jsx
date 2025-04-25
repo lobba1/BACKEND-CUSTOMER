@@ -6,7 +6,7 @@ const SectionHeader = ({title}) => {
     <section className= "section-header">
                <h1>{title }</h1>
                 <div className="nav-buttons">
-                    <Link to="/projects/project" className= "btn btn-gray">Skapa project</Link>
+                    <Link to="/projects/new" className= "btn btn-gray">Skapa project</Link>
                     <Link to= "/projects" className= "btn btn-yellow">Visa lista</Link>
                 </div>
 
